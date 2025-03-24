@@ -5,7 +5,7 @@ import os
 
 # Função principal para realizar o scraping
 def scrape_itau(base_url):
-
+    os.environ["PLAYWRIGHT_BROWSERS_PATH"] = os.path.join(os.path.dirname(__file__), "playwright")
     with sync_playwright() as p:
         print("Abrindo página web...")
         browser = p.chromium.launch(headless=False, args=["--disable-blink-features=AutomationControlled"])
