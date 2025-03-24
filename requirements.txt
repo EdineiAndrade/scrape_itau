@@ -1,0 +1,8 @@
+playwright
+playwright-stealth
+pandas
+openpyxl
+gspread
+google-auth
+camelot-py
+PyPDF2
